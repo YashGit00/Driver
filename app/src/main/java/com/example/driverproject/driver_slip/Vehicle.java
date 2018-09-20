@@ -2,19 +2,21 @@ package com.example.driverproject.driver_slip;
 public class Vehicle {
 
     String vehicle_Type,vehicle_Number,date_journey,start_kms,end_kms,user_id;
+    boolean submitState;
 
     public Vehicle()
     {
 
     }
 
-    public Vehicle(String user_id,String vehicle_Type, String vehicle_Number, String date_journey, String start_kms, String end_kms) {
+    public Vehicle(String user_id,String vehicle_Type, String vehicle_Number, String date_journey, String start_kms, String end_kms,boolean submitState) {
         this.user_id=user_id;
         this.vehicle_Type = vehicle_Type;
         this.vehicle_Number = vehicle_Number;
         this.date_journey = date_journey;
         this.start_kms = start_kms;
         this.end_kms = end_kms;
+        this.submitState=submitState;
     }
 
     public String getVehicle_Type() {

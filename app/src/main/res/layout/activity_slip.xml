@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#c699cc00"
     android:orientation="vertical"
     tools:context=".Slip">
 
@@ -12,18 +13,20 @@
         android:layout_width="match_parent"
         android:layout_height="84dp"
         android:layout_weight="1"
-        android:background="@android:color/holo_orange_light"
         android:text="New Duty Slip"
         android:textAlignment="center"
-        android:textColor="@android:color/holo_blue_dark"
-        android:textSize="24sp" />
+        android:textAllCaps="true"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:typeface="normal" />
 
     <TextView
         android:id="@+id/editTextDate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:layout_weight="1"
         android:ems="10"
 
@@ -37,6 +40,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
 
+        android:layout_marginTop="20dp"
+
         android:layout_weight="1"
         android:ems="10"
         android:hint="Vehicle type"
@@ -49,7 +54,7 @@
         android:layout_marginBottom="20dp"
         android:layout_weight="1"
         android:ems="10"
-        android:hint="Vehicle Number(eg. MH-12 1111)"
+        android:hint="Vehicle Number(eg. MH-12  XX 1234)"
         android:inputType="textPersonName" />
 
     <EditText
@@ -66,7 +71,7 @@
         android:id="@+id/editTextKMSP"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="50dp"
         android:layout_weight="1"
         android:ems="10"
         android:hint="Kms at pickup"
@@ -79,14 +84,14 @@
         <Button
             android:id="@+id/buttonSave"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="68dp"
             android:layout_weight="1"
             android:text="SAVE" />
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/buttonSubmit"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="68dp"
             android:layout_weight="1"
             android:text="SUBMIT" />
     </LinearLayout>
