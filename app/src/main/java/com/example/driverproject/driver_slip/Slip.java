@@ -61,7 +61,7 @@ public class Slip extends AppCompatActivity implements View.OnClickListener{
 
     }
 
-    public void saveData()
+    public void saveData(boolean submitState)
     {
 
 
@@ -110,7 +110,7 @@ public class Slip extends AppCompatActivity implements View.OnClickListener{
         {
             String user_id = mauth.getCurrentUser().getUid();
             String id = databaseVehicle.push().getKey();
-            Vehicle v = new Vehicle(user_id, vehicle_Type, vehicle_Number, date_journey, start_kms, end_kms);
+            Vehicle v = new Vehicle(user_id, vehicle_Type, vehicle_Number, date_journey, start_kms, end_kms,submitState);
             databaseVehicle.child(id).setValue(v);
             Toast.makeText(this, "Added details", Toast.LENGTH_LONG).show();
         }
@@ -122,8 +122,10 @@ public class Slip extends AppCompatActivity implements View.OnClickListener{
         switch(view.getId())
         {
             case R.id.buttonSave:
-                saveData();
+                saveData(false);
                 break;
+            case R.id.buttonSubmit:
+                saveData(true);
         }
 
     }

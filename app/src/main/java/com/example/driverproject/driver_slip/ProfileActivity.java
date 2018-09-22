@@ -96,7 +96,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
 
     }
 
-    void floatButton(View view)
+    public void floatButton(View view)
     {
         Toast.makeText(this,"New Slip ", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(this,Slip.class));

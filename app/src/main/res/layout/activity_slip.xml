@@ -6,6 +6,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+
+    android:background="#c699cc00"
+
     android:orientation="vertical"
     android:background="@drawable/gradient"
     tools:context=".Slip"
@@ -16,6 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="84dp"
         android:layout_weight="1"
+
         android:paddingTop="20dp"
         android:text="New Duty Slip"
         android:textAlignment="center"
@@ -24,10 +29,20 @@
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="0dp" />
 
+        android:text="New Duty Slip"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:typeface="normal" />
+
+
     <TextView
         android:id="@+id/editTextDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
 
@@ -35,6 +50,10 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+
         android:layout_weight="1"
         android:ems="10"
         android:textAlignment="center"
@@ -160,6 +179,8 @@
 
 
 
+        android:layout_marginTop="20dp"
+
         android:layout_weight="1"
         android:ems="10"
         android:hint="Vehicle type"
@@ -172,7 +193,7 @@
         android:layout_marginBottom="20dp"
         android:layout_weight="1"
         android:ems="10"
-        android:hint="Vehicle Number(eg. MH-12 1111)"
+        android:hint="Vehicle Number(eg. MH-12  XX 1234)"
         android:inputType="textPersonName" />
 
     <EditText
@@ -189,7 +210,7 @@
         android:id="@+id/editTextKMSP"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="50dp"
         android:layout_weight="1"
         android:ems="10"
         android:hint="Kms at pickup"
@@ -202,14 +223,14 @@
         <Button
             android:id="@+id/buttonSave"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="68dp"
             android:layout_weight="1"
             android:text="SAVE" />
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/buttonSubmit"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="68dp"
             android:layout_weight="1"
             android:text="SUBMIT" />
     </LinearLayout>
